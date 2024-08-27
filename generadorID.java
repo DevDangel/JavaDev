@@ -71,10 +71,12 @@ public class generadorID {
         ID_UNICO.append(nombreID).append(apellidoID).append(anioNacimientoID).append(nAleatorioF);
         ///////////////////////////////////////////////////////////////////////////////////////////
         System.out.println("Hola " + nombre);
-        System.out.println("""
-                \tTu nuevo numero de identificación (ID) generado por el sistema es:
-                """
-                + "\t" + ID_UNICO + "\n\tFelicidades.");
+        System.out.printf("""
+                %n Hola %s,
+                \tTu nuevo numero de ID unico arrojado por el sistema es:
+                \t%s
+                \tFelicidades.
+                """,nombre,ID_UNICO);
 
 
     }
